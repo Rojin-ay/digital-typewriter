@@ -1,0 +1,26 @@
+{
+  "name": "pomodoro-electron",
+  "version": "1.0.0",
+  "description": "Mein erster Pomodoro Timer mit Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Rojin",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^32.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rojin-ay/digital-typewriter.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Rojin-ay/digital-typewriter/issues"
+  },
+  "homepage": "https://github.com/Rojin-ay/digital-typewriter#readme",
+  "dependencies": {
+    "@notionhq/client": "^5.22.0"
+  }
+}

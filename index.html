@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rojin Daily Dashboard</title>
+  <link rel="icon" type="image/png" href="assets/MiffKopf.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="dashboard">
+    <img class="decor decor-flower-blue" src="assets/BlumeBlau.png" alt="" />
+    <img class="decor decor-flower-white" src="assets/BlumeWeiß.png" alt="" />
+    <img class="decor decor-star" src="assets/Stern.png" alt="" />
+
+    <section class="hero">
+      <div class="quote-card">
+        <img src="assets/MiffKopf.png" alt="" class="mini-icon" />
+        <p id="dailyQuote">Heute ist ein guter Tag für kleine Schritte.</p>
+      </div>
+
+      <div class="hello-block">
+        <h1>Hello,<br />Rojin</h1>
+        <img src="assets/MiffyGroß.png" alt="Miffy" class="miffy-big" />
+      </div>
+    </section>
+
+    <section class="topbar card">
+      <div class="date-box">
+        <img src="assets/KalenderGelb.png" alt="" />
+        <div>
+          <span id="weekday">MON</span>
+          <strong id="dayNumber">01</strong>
+          <small id="monthYear">JAN 2026</small>
+        </div>
+      </div>
+
+      <div class="center-message">
+        <img src="assets/MiffKopf.png" alt="" />
+        <p>small things<br />make big days.</p>
+      </div>
+
+      <div class="time-weather">
+        <div class="time-box">
+          <img src="assets/Uhr.png" alt="" />
+          <div>
+            <strong id="clock">00:00</strong>
+            <small>Hamburg</small>
+          </div>
+        </div>
+        <div class="weather-pill">
+          <span id="weatherTemp">--°C</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel events-panel card">
+      <header class="panel-header">
+        <img src="assets/KalenderBlau.png" alt="" />
+        <h2>today’s events</h2>
+      </header>
+      <ul id="eventsList" class="list events-list">
+        <li class="empty">Google Calendar wird später verbunden.</li>
+      </ul>
+    </section>
+
+    <section class="panel todos-panel card">
+      <header class="panel-header">
+        <img src="assets/ToDo.png" alt="" />
+        <h2>to do list</h2>
+      </header>
+      <ul id="todosList" class="list todos-list">
+        <li class="empty">Notion wird später verbunden.</li>
+      </ul>
+      <img src="assets/MiffySchlaeft.png" alt="" class="sleepy-miffy" />
+    </section>
+
+    <section class="panel gmail-panel card">
+      <header class="panel-header">
+        <img src="assets/BlumeWeiß.png" alt="" />
+        <h2>today’s gmail</h2>
+      </header>
+      <ul id="gmailList" class="list gmail-list">
+        <li class="empty">Gmail-Betreffzeilen werden später verbunden.</li>
+      </ul>
+      <img src="assets/MiffyKlein.png" alt="" class="small-miffy" />
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
