@@ -31,10 +31,13 @@ module.exports = async (req, res) => {
         page.properties.Priority?.select?.name ||
         "todo";
 
-      return {
-        title,
-        type: priority
-      };
+    return {
+      id: page.id,
+      title,
+      type: priority,
+      done: page.properties.Done?.checkbox || false
+
+};
     });
 
     res.status(200).json(todos);

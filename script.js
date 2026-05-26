@@ -79,7 +79,12 @@ function renderTodos(todos) {
   todos.forEach(todo => {
     const li = document.createElement("li");
     li.innerHTML = `
-      <span class="todo-check"></span>
+      <input 
+        type="checkbox"
+        class="todo-check"
+        ${todo.done ? "checked" : ""}
+        onchange="toggleTodo('${todo.id}', this.checked)"
+      >
       <span class="item-title">${todo.title}</span>
       <span class="tag">${todo.type || "todo"}</span>
     `;
@@ -135,3 +140,20 @@ loadHamburgWeather();
 
 setInterval(updateDateTime, 1000);
 
+async function toggleTodo(id, done) {
+  try {
+    await fetch("/api/toggleTodo", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        id,
+        done
+      })
+    });
+
+  } catch (error) {
+    console.error(error);
+  }
+}
