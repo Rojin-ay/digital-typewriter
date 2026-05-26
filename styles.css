@@ -5,7 +5,7 @@
 }
 
 :root {
-  --blue-bg: #d9efff;
+  --blue-bg: #cadae6;
   --baby-blue: #cfe7ff;
   --butter: #ffe88a;
   --butter-soft: #fff4bd;
@@ -99,8 +99,8 @@ body {
   letter-spacing: -4px;
   color: var(--dark-blue);
   font-weight: 900;
-  margin: 24px 0 18px ;
-  margin-bottom: 60px;
+  margin: auto;
+  margin-bottom: 400px;
   text-shadow: 0 7px 0 rgba(13, 71, 134, .06);
   text-align: center;
 }
@@ -357,12 +357,6 @@ body {
   opacity: .95;
 }
 
-.small-miffy {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  width: 130px;
-}
 
 .gmail-list {
   padding-right: 150px;
@@ -454,7 +448,7 @@ body {
     padding-right: 26px;
   }
 
-  .small-miffy,
+  
   .sleepy-miffy {
     display: none;
   }
