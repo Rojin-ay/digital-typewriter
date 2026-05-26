@@ -121,14 +121,10 @@ async function loadTodos() {
   try {
     const response = await fetch("/api/notion");
     const todos = await response.json();
-
     renderTodos(todos);
   } catch {
     renderTodos([
-      {
-        title: "Notion konnte nicht geladen werden",
-        type: "error"
-      }
+      { title: "Notion konnte nicht geladen werden", type: "error" }
     ]);
   }
 }
